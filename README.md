@@ -26,8 +26,9 @@ Compression scheme is used at least for 2bpp tiles and nametables. Nothing speci
 8 LZ entries are prefixed by flags byte.  
 1 - literal copy;
 0 - LZ pair: ZZZZZZZZ ?XXYYYYY where
-XXZZZZZZZZ - lzDistance. Unexplainable: buffer ring starts from 3DE	and wraps to 0 at 400. In absolute address: D700-DAFF
+XXZZZZZZZZ - lzDistance. 
+	Unexplainable: buffer ring starts from 3DE and wraps to 0 at 400.
+	In absolute address: D700-DAFF
 YYYYY - lzLength -3
-```
 ```
 Build with [Haskell Stack](https://haskellstack.org) tool.
